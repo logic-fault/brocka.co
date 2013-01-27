@@ -44,15 +44,16 @@ class MenuNode
 
 class Menu
 {
-    private $nodeList;
+    private $rootNode; 
 
     public function __construct()
     {
-        $nodeList = array();
+        $this->rootNode = 0;
     }
 
-    public function addBaseNode(MenuNode $node)
+    public function addRootNode(MenuNode $node)
     {
+        $this->rootNode = $node;
     }
     
 }
