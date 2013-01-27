@@ -18,12 +18,32 @@ class MenuNode
         $this->children[] = $child;
     }
 
+    public function getName()
+    {
+        return $this->name;
+    }
+ 
+    public function getFile()
+    {
+        return $this->file;
+    }
+
     public function printName()
     {
         echo $this->name;
     }
 
-    function printChildren()
+    public function printFile()
+    {
+        echo $this->file;
+    }
+
+    public function getChildren()
+    {
+        return $this->children;
+    }
+
+    public function printChildren()
     {
        foreach($this->children as $child)
        {
@@ -31,7 +51,7 @@ class MenuNode
        }
     }
 
-    function printDescendents()
+    public function printDescendents()
     {
        print $this->name;
        print "\n";
@@ -42,18 +62,41 @@ class MenuNode
     }
 }
 
+class MenuStack
+{
+    private $menus;
+
+}
+
 class Menu
 {
     private $rootNode; 
+    private $lowParentNode;
+    private $offset; 
 
-    public function __construct()
+    public function __construct($offset = 0)
     {
         $this->rootNode = 0;
+        $this->offset   = $offset;
     }
 
     public function addRootNode(MenuNode $node)
     {
         $this->rootNode = $node;
+    }
+
+    public function show()
+    {
+        foreach($this->rootNode->getChildren() as $child)
+        {
+            $this->printMenuEntry($child->getName(), $child->getFile());
+        }
+    }
+
+    private function printMenuEntry($name, $file)
+    {
+        echo ' <a class="menu_a" style="color: #ff0000" href="' . $file .
+             '"><div class="menu_entry">' . $name . '</div></a>';
     }
     
 }

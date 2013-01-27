@@ -94,3 +94,23 @@ a:link, a:visited, a:hover
     font-size: 12px;
     /*background-color: #ff0000;*/
 }
+
+.menu
+{
+}
+
+.menu_entry 
+{
+   border: 1px dashed #ffffff;
+   float: left;
+   width: 150px;
+   color: #ffffff;
+   background-color: #333333;
+   text-align: center;
+}
+
+.menu_entry:hover
+{
+   border: 1px dashed #ff0000;
+   background-color: #555555;
+}

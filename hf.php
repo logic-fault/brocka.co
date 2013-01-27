@@ -1,5 +1,7 @@
 <?php
 
+require_once('m.php');
+
 $domain = "http://" . $_SERVER['HTTP_HOST'] . '/css/' ;
 
 function printHeader($title = '')
@@ -46,8 +48,11 @@ global $domain;
    </div>
 
    <div class="main">
-
 <?
+
+    buildMenu();
+    echo '<br /><br />';
+
 }
 
 
