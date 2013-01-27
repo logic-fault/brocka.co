@@ -1,1 +1,96 @@
-../css/style.css
+body
+{
+   background-color: #aaaaaa;
+   font-family: "Courier New", "Times New Roman", Times, serif;
+}
+
+a:link, a:visited, a:hover
+{
+   color: #000000;
+   text-decoration:none;
+}
+
+.banner
+{
+   /* float:right */
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.banner_1
+{
+   font-size: 45px;
+   height: 50px;
+}
+
+.banner_2
+{
+   font-color: 20px;
+   height: 30px;
+}
+
+.footer
+{
+    background-color: #333333;
+    font-color: #000000;
+}
+
+.outer
+{
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+
+.left_bar
+{
+   float: left;
+   width: 80px;
+}
+
+
+.left_red
+{
+   float: left;
+   width: 80px;
+   height: 80px;
+   background-color: #ff0000;
+}
+
+.main
+{
+   color: #ff0000;
+   height: 70%; 
+} 
+
+.left_gray
+{
+   margin-top: 20px;
+   margin-left: none;
+   float: left;
+   width: 80px;
+   height: 80%;
+   background-color: #333333;
+
+}
+
+.work_pic_outer
+{
+    margin-top: 5%;
+
+    margin-bottom:none;
+    color: #000000;
+
+}
+
+.work_pic
+{
+   font-size:0px;
+   height: 80%;
+}
+
+.work_pic:hover
+{
+    font-size: 12px;
+    /*background-color: #ff0000;*/
+}
