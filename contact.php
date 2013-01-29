@@ -6,6 +6,9 @@ printHeader('contact');
 
 ?>
 
+<!--
+  this document by http://spyrestudios.com/coding-a-minimalist-contact-form-with-captcha-spam-protection/
+-->
 
 <div id="wrapper">
 	<div id="contactwrapper">
