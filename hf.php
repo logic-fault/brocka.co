@@ -19,6 +19,8 @@ global $domain;
 
 <head>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="<? echo $domain?>style.css" /> 
 
    <title><? echo 'brocka.co : ' . $title  ?></title>
@@ -77,12 +79,12 @@ function printFooter()
 </p>
 <p style="width: 50%; text-align:right;  float: right">
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/NoCopyright.svg/64px-NoCopyright.svg.png" height="31" alt="no copyright" />
-    <! img src="http://images.wikia.com/halo/images/9/94/Anarchy.png" height="31" alt="an" />
+  <?//  <! img src="http://images.wikia.com/halo/images/9/94/Anarchy.png" height="31" alt="an" /> ?>
     <img src="http://twibbon.s3.amazonaws.com/67/temp_f093c8bd-f56e-416b-b82a-5fa37fb35601.png" height="31" alt="sy" />
+    <img src="http://www.catb.org/hacker-emblem/glider-small.png" height="31" alt="h" />
 </p>
 </div>
 </div>
-<br />
   
 
 </body>

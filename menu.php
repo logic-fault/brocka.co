@@ -1,5 +1,6 @@
 <?php
 
+
 class MenuNode
 {
     public $name;
@@ -95,7 +96,9 @@ class Menu
 
     private function printMenuEntry($name, $file)
     {
-        echo ' <div class="menu_entry"> <a class="menu_a" style="color: #ff0000" href="' . $file .
+        $domain = "http://" . $_SERVER['HTTP_HOST'] . '/' ;
+
+        echo ' <div class="menu_entry"> <a class="menu_a" style="color: #ff0000" href="' . $domain . $file .
              '">' . $name . '</a></div>';
     }
     
