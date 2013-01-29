@@ -95,8 +95,8 @@ class Menu
 
     private function printMenuEntry($name, $file)
     {
-        echo ' <a class="menu_a" style="color: #ff0000" href="' . $file .
-             '"><div class="menu_entry">' . $name . '</div></a>';
+        echo ' <div class="menu_entry"> <a class="menu_a" style="color: #ff0000" href="' . $file .
+             '">' . $name . '</a></div>';
     }
     
 }

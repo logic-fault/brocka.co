@@ -6,7 +6,7 @@ body
 
 a:link, a:visited, a:hover
 {
-   color: #ff0000;
+   color: #000000;
    text-decoration:none;
 }
 
@@ -25,18 +25,19 @@ a:link, a:visited, a:hover
 
 .banner_2
 {
+   font-color: 20px;
    height: 30px;
 }
 
 .footer
 {
-    border-top: 1px solid #ffffff;
-    height: 40px;
+    background-color: #333333;
+    font-color: #000000;
 }
 
 .outer
 {
-    margin-left: 100px; 
+   margin-left: 100px;
    margin-right: 100px;
 }
 
@@ -53,18 +54,19 @@ a:link, a:visited, a:hover
    float: left;
    width: 80px;
    height: 80px;
-   /* background-color: #ff0000; */
+   background-color: #ff0000;
 }
 
 .main
 {
-   color: #000000;
-   height: 500px; 
+   color: #ff0000;
+   height: 70%; 
 } 
 
 .left_gray
 {
    margin-top: 20px;
+   margin-left: none;
    float: left;
    width: 80px;
    height: 80%;
@@ -76,6 +78,7 @@ a:link, a:visited, a:hover
 {
     margin-top: 5%;
 
+    margin-bottom:none;
     color: #000000;
 
 }

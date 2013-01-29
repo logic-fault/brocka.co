@@ -13,10 +13,11 @@ Commercial Work:
    <div class="work_pic_outer">
 
 
-           <a href="projects/qel.php">
 	   <div class="work_pic" style="float:left; width: 30%; height: 30%">
               <div>
-	      <img style="width:100%" src="img/qel.png" />
+              <a href="projects/qel.php">
+	      <img style="width:100%" src="img/qel.png" alt="qel" />
+              </a>
               </div>
               <div>
               <br />
@@ -32,11 +33,11 @@ Commercial Work:
               <div style="color:#ff0000"> Click for details... </div>
               </div>
 	   </div>
-           </a>
 	   
-            <a href="projects/delphi.php">
 	   <div class="work_pic" style="float: left; width: 30%; margin-left: 5%; height: 30%">
-	      <img style="width:80%" src="img/fob.jpg" />
+              <a href="projects/delphi.php">
+	      <img style="width:80%" src="img/fob.jpg" alt="fob" />
+              </a>
               <br />
               <br />
               Delphi
@@ -50,12 +51,12 @@ Commercial Work:
               <br />
               <div style="color:#ff0000"> Click for details... </div>
 	   </div>
-           </a>
 
 
-           <a href="projects/dl.php">
 	   <div class="work_pic" style="float: left; width: 30%; margin-left:5%; height: 40%">
-	      <img style="float: center; height: 100%;" src="img/dl.png" />
+              <a href="projects/dl.php">
+	      <img style="height: 180px;" src="img/dl.png" alt="dl" />
+              </a>
               <br />
               <br />
               Datalogics
@@ -67,7 +68,6 @@ Commercial Work:
               <br />
               <div style="color:#ff0000"> Click for details... </div>
 	   </div>
-           </a>
 
 
    </div>
