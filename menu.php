@@ -88,18 +88,31 @@ class Menu
 
     public function show()
     {
+        echo '<div class="menu_guard"> &nbsp;</div>';
         foreach($this->rootNode->getChildren() as $child)
         {
             $this->printMenuEntry($child->getName(), $child->getFile());
         }
+        echo '<div class="menu_guard"> &nbsp; </div>';
     }
 
     private function printMenuEntry($name, $file)
     {
+        $this_file = $_SERVER['PHP_SELF'];
+
+        if (basename($this_file) == basename($file))
+        {
+           $menu_class = "menu_entry_selected";
+        }
+        else
+        {
+           $menu_class = "menu_entry";
+        }
+
         $domain = "http://" . $_SERVER['HTTP_HOST'] . '/' ;
 
-        echo ' <div class="menu_entry"> <a class="menu_a" style="color: #ff0000" href="' . $domain . $file .
-             '">' . $name . '</a></div>';
+        echo ' <div class="' . $menu_class  . ' "> <a class="menu_a" style="color: #ff0000" href="' . $domain . $file .
+             '">' . $name .'</a></div>';
     }
     
 }

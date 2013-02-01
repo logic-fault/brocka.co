@@ -20,7 +20,7 @@ global $domain;
 <head>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="<? echo $domain?>style.css" /> 
 
    <title><? echo 'brocka.co : ' . $title  ?></title>
@@ -67,6 +67,7 @@ function printFooter()
 ?>
 
    </div>
+<div style="clear:both"> </div>
 <div class="footer">
 <p style="width: 50%; float:left" >
     <a href="http://validator.w3.org/check?uri=referer"><img
